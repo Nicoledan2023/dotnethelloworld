@@ -1,0 +1,23 @@
+﻿        @page
+        @model PrivacyModel
+        @{
+            ViewData["Title"] = "Contact";
+        }
+        <h1>@ViewData["Title"]</h1>
+        <div class="c-info">
+        <p><strong>Name:</strong> Dan</p>
+        <p><strong>Email:</strong> Dan@hotmail.com</p>
+        <p><strong>Phone:</strong> 514-888-1111</p>
+        <p><strong>Address:</strong> 55 rue des lance,Alymer,QC</p>
+        </div>
+
+    @section footer{
+        <h1>Hello,this is (near) the end of the page</h1>
+    }
+    <script>
+        window.addEventListener('load', function () {
+    if (document.title === 'Contact') {
+        console.log('Contact page loaded.');
+    }
+    });
+     </script>
